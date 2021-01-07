@@ -158,6 +158,7 @@ function GenerateStats()
             continue;
         }
         else{
+            glob_weap_index.push(statsIndex);
             var statsPercent = RoundToNearTen(GetRandVal(100));
             document.write('<p class="tf-item-con">-' + statsPercent + "% " + defaultStats[statsIndex] + RandWeapAttribute() + '</p>');
         }
