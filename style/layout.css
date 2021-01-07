@@ -1,10 +1,10 @@
-@import url('http://fonts.cdnfonts.com/css/tf2-secondary');
+    @import url('http://fonts.cdnfonts.com/css/tf2-secondary');
 
     @font-face{
         font-family: 'tf2build';
         font-style: normal;
         font-weight: normal;
-        src: local('TF2 Build'), url('fonts/tf2build.woff') format('woff');
+        src: local('TF2 Build'), url('../fonts/tf2build.woff') format('woff');
     }
 
     body, html{
