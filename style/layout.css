@@ -1,0 +1,192 @@
+@import url('http://fonts.cdnfonts.com/css/tf2-secondary');
+
+    @font-face{
+        font-family: 'tf2build';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TF2 Build'), url('fonts/tf2build.woff') format('woff');
+    }
+
+    body, html{
+        background-color: #2A2725;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .bpbk-div{
+        width: 800px;
+        height: 500px;
+        border-style: solid;
+        border-color: #797166;
+        border-width: 2px;
+        border-radius: 5px;
+        background-color: #312E2C;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .nitem{
+        font-family: 'tf2build', Fallback, sans-serif;
+        color: white;
+        font-size: 36px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -330px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .ditem{
+        font-family: 'tf2build', Fallback, sans-serif;
+        color: white;
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -280px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .item-desc-div{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .item-exmp-div{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .tf-nitem{
+        font-family: 'tf2build', Fallback, sans-serif;
+        color: white;
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .tf-lvlitem{
+        text-align: center;
+        font-family: "TF2 Secondary", Courier;
+        color: gray;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .tf-item-desc{
+        height: 250px;
+    }
+
+    .tf-item-pro{
+        font-family: "TF2 Secondary", Courier;
+        font-size: 18px;
+        word-break: break-word;
+        color: white;
+        white-space: pre-wrap;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .tf-item-con{
+        font-family: "TF2 Secondary", Courier;
+        font-size: 18px;
+        word-break: break-word;
+        color: rgb(207, 48, 48);
+        white-space: pre-wrap;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .genitem-btn{
+        
+        border-radius: 3%;
+        background-color: #776B5F;
+        font-family: 'tf2build', Fallback, sans-serif;
+        color: white;
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: 300px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .gen-btn{
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    
+    .gen-btn:hover{
+        cursor: pointer;
+    }
+
+    .hd-wb{
+        margin: 0px;
+        padding: 0px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        width: 100%;
+        height: 25px;
+        color: #797166;
+        background-color: #2A2725;
+        border-bottom-style: solid;
+        border-width: 1.5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .hd-cd{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        font-family: "TF2 Secondary", Courier;
+    }
+
+    .vwsrc-btn{
+        border-radius: 3%;
+        background-color: #463f38;
+        font-family: 'tf2build', Fallback, sans-serif;
+        color: white;
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: 370px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .src-btn{
+        color: rgb(192, 192, 192);
+        margin: 0px;
+        padding: 10px;
+        padding-right: 25px;
+        padding-left: 25px;
+        text-align: center;
+        font-family: "TF2 Secondary", Courier;
+    }
+
+    .vwsrc-btn:hover{
+        cursor: pointer;
+    }

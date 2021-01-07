@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TF2 Weapon Generator</title>
+    <script src="javascript/randstats.js"></script>
+    <link rel="stylesheet" href="style/layout.css">
+</head>
+<body>
+    <div class="hd-wb">
+        <p class="hd-cd">Created by SteamUser: <span onclick="location.href='https://steamcommunity.com/id/beyluta/'"><u>Beyluta</u></span></p>
+    </div>
+
+    <p class="nitem">NEW ITEM AQUIRED!</p>
+    <p class="ditem">You <span style="color:#C74F37">Crafted</span>:</p>
+    <div class="bpbk-div">
+        <div class="item-exmp-div">
+            <div class="item-desc-div">
+                <p class="tf-nitem"><span style="color:#CEBE3C"><script>RandWeapQuality(); GetRandWeapon();</script></span>!</p>
+                <p class="tf-lvlitem"><script>GetRandWeaponLevel();</script></p>
+                
+                <div class="tf-item-desc">
+                    <script>
+                        GenerateStats();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="genitem-btn" onclick="location.reload()">
+        <p class="gen-btn">Generate!</p>
+    </div>
+
+    <div class="vwsrc-btn" onclick="location.reload()">
+        <p class="src-btn">View Source</p>
+    </div>
+</body>
+</html>
