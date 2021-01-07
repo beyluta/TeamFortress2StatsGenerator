@@ -40,6 +40,7 @@ function RoundToNearTen(cVal)
 
 // Global weapon name
 var glob_weap = "";
+var glob_weap_index = [];
 
 // Gets a new weapon from the array of weapons
 function GetRandWeapon()
@@ -112,16 +113,53 @@ function GenerateStats()
     // Displaying the pros
     for (var i = 0; i < pCount; i++)
     {
+        var skipLoop = false; // Should the current loop be skipped?
         var statsIndex = GetRandVal(defaultStats.length - 1);
-        var statsPercent = RoundToNearTen(GetRandVal(100));
-        document.write('<p class="tf-item-pro">+' + statsPercent + "% " + defaultStats[statsIndex] + RandWeapAttribute() +'</p>');
+
+        // Searching for duplicates
+        for (var x = 0; x < glob_weap_index.length; x++)
+        {
+            if (statsIndex == glob_weap_index[x]) // Found a duplicate entry
+            {
+                skipLoop = true;
+            }
+        }
+
+        // Continuing to the next loop if applicable
+        if (skipLoop == true){
+            skipLoop = false;
+            continue;
+        }
+        else{
+            glob_weap_index.push(statsIndex);
+            var statsPercent = RoundToNearTen(GetRandVal(100));
+            document.write('<p class="tf-item-pro">+' + statsPercent + "% " + defaultStats[statsIndex] + RandWeapAttribute() +'</p>');
+        }
     }
 
     // Displaying the cons
     for (var i = 0; i < cCount; i++)
     {
+        var skipLoop = false; // Should the current loop be skipped?
         var statsIndex = GetRandVal(defaultStats.length - 1);
-        var statsPercent = RoundToNearTen(GetRandVal(100));
-        document.write('<p class="tf-item-con">-' + statsPercent + "% " + defaultStats[statsIndex] + RandWeapAttribute() + '</p>');
+        
+        // Searching for duplicates
+        for (var x = 0; x < glob_weap_index.length; x++)
+        {
+            if (statsIndex == glob_weap_index[x]) // Found a duplicate entry
+            {
+                skipLoop = true;
+            }
+        }
+
+        // Continuing to the next loop if applicable
+        if (skipLoop == true){
+            skipLoop = false;
+            continue;
+        }
+        else{
+            var statsPercent = RoundToNearTen(GetRandVal(100));
+            document.write('<p class="tf-item-con">-' + statsPercent + "% " + defaultStats[statsIndex] + RandWeapAttribute() + '</p>');
+        }
     }
 }
